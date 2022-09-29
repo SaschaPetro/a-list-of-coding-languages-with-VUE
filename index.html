@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <div id="app">
+      <h1>Coding languages</h1>
+      <h2>Filter:</h2>
+      <div class="btn-all">
+        <button class="div1" @click="startsWithLetter = ''">All</button>&nbsp;
+        <button class="div2" @click="startsWithLetter = 'A'">A</button>&nbsp;
+        <button class="div3" @click="startsWithLetter = 'B'">B</button>&nbsp;
+        <button class="div4" @click="startsWithLetter = 'C'">C</button>&nbsp;
+        <button class="div5" @click="startsWithLetter = 'D'">D</button>&nbsp;
+        <button class="div6" @click="startsWithLetter = 'E'">E</button>&nbsp;
+        <button class="div7" @click="startsWithLetter = 'F'">F</button>&nbsp;
+        <button class="div8" @click="startsWithLetter = 'G'">G</button>&nbsp;
+        <button class="div9" @click="startsWithLetter = 'H'">H</button>&nbsp;
+        <button class="div10" @click="startsWithLetter = 'I'">I</button>&nbsp;
+        <button class="div11" @click="startsWithLetter = 'J'">J</button>&nbsp;
+        <button class="div12" @click="startsWithLetter = 'K'">K</button>&nbsp;
+        <button class="div13" @click="startsWithLetter = 'L'">L</button>&nbsp;
+        <button class="div14" @click="startsWithLetter = 'M'">M</button>&nbsp;
+        <button class="div15" @click="startsWithLetter = 'N'">N</button>&nbsp;
+        <button class="div16" @click="startsWithLetter = 'O'">O</button>&nbsp;
+        <button class="div17" @click="startsWithLetter = 'P'">P</button>&nbsp;
+        <button class="div18" @click="startsWithLetter = 'Q'">Q</button>&nbsp;
+        <button class="div19" @click="startsWithLetter = 'R'">R</button>&nbsp;
+        <button class="div20" @click="startsWithLetter = 'S'">S</button>&nbsp;
+        <button class="div21" @click="startsWithLetter = 'T'">T</button>&nbsp;
+        <button class="div22" @click="startsWithLetter = 'U'">U</button>&nbsp;
+        <button class="div23" @click="startsWithLetter = 'V'">V</button>&nbsp;
+        <button class="div24" @click="startsWithLetter = 'W'">W</button>&nbsp;
+        <button class="div25" @click="startsWithLetter = 'X'">X</button>&nbsp;
+        <button class="div26" @click="startsWithLetter = 'Y'">Y</button>&nbsp;
+        <button class="div27" @click="startsWithLetter = 'Z'">Z</button>
+      </div>
+      <ul>
+        <li class="list" v-for="code in dynamicCodeList" :key="code">
+          {{ code }}
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
